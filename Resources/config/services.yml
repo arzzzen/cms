@@ -1,0 +1,7 @@
+parameters:
+#    arzzzen_cms.example.class: Arzzzen\CmsBundle\Example
+
+services:
+#    arzzzen_cms.example:
+#        class: %arzzzen_cms.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

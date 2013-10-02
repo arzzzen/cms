@@ -1,0 +1,25 @@
+{
+    "name": "arzzzen/cms-bundle",
+    "type": "symfony-bundle",
+    "description": "Cms bundle for use with Symfony2",
+    "keywords": ["cms", "bundle"],
+    "homepage": "https://github.com/arzzzen/cms",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arsen R. Salmanov",
+            "email": "arzenslim@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": ">=2.1,<2.2-dev"
+    },
+    "autoload": {
+        "psr-0": { "Arzzzen\\CmsBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Arzzzen/CmsBundle"
+}
