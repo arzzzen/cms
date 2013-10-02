@@ -5,3 +5,13 @@ services:
 #    arzzzen_cms.example:
 #        class: %arzzzen_cms.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+    sonata.admin.post:
+        class: Arzzzen\CmsBundle\Admin\PageAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Контент", label: "Страница" }
+        arguments:
+            - ~
+            - Arzzzen\CmsBundle\Entity\Page
+            - ~
+        calls:
+            - [ setTranslationDomain, [ArzzzenCmsBundle]]
