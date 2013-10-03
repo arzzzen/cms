@@ -27,6 +27,7 @@ new Sonata\jQueryBundle\SonatajQueryBundle(),
 new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
 new Sonata\AdminBundle\SonataAdminBundle(),
+new FOS\UserBundle\FOSUserBundle(),
 
 ```
 
@@ -62,6 +63,14 @@ arzzzen_cms:
 sonata_admin:
     templates:
         layout:  ArzzzenCmsBundle:Default:sonata_admin_base_layout.html.twig
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: Arzzzen\CmsBundle\Entity\User
+
+framework:
+    translator: ~
 
 ```
 
