@@ -15,3 +15,14 @@ services:
             - ~
         calls:
             - [ setTranslationDomain, [ArzzzenCmsBundle]]
+
+    sonata.admin.news:
+        class: Arzzzen\CmsBundle\Admin\NewsAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Контент", label: "Новости" }
+        arguments:
+            - ~
+            - Arzzzen\CmsBundle\Entity\News
+            - 'SonataAdminBundle:CRUD'
+        calls:
+            - [ setTranslationDomain, [CreativeMkcBundle]]
