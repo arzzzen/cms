@@ -15,8 +15,10 @@ class PageAdmin extends Admin
         $formMapper
             ->add('route', 'text', array('label' => 'Путь к странице /'))
             ->add('title', 'text', array('label' => 'Заголовок страницы'))
-            ->add('sidebar', 'text', array('label' => 'Сайдбар', 'required' => false))
-            ->add('content', 'text', array('label' => 'Контент')) //if no type is specified, SonataAdminBundle tries to guess it
+            ->add('content', 'textarea', array('label' => 'Контент', 'attr' => array('class' => 'ckeditor')))
+            ->with('Дополнительно')
+                    ->add('sidebar', 'text', array('label' => 'Сайдбар', 'required' => false))
+            ->end()
         ;
     }
 
