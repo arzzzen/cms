@@ -16,6 +16,8 @@ Requirements
 : Integrates the admin bundle into with MongoDB (early stage)
 * [SonataDoctrinePhpcrAdminBundle](https://github.com/sonata-project/SonataDoctrinePhpcrAdminBundle) 
 : Integrates the admin bundle into with PHPCR (early stage)
+* "friendsofsymfony/user-bundle": "~2.0@dev"
+
 
 AppKernel.php
 
