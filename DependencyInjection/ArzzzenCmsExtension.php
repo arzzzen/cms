@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class ArzzzenCmsExtension extends Extension
+class ArzzzenCmsExtension extends Extension implements PrependExtensionInterface
 {
     /**
      * {@inheritDoc}
@@ -35,5 +35,7 @@ class ArzzzenCmsExtension extends Extension
             'arzzzen.cms.layout',
             $config['layout']
         );
+
+        $container->setParameter('sonata_admin.title','ArzzzenCmsBundle:Default:sonata_admin_base_layout.html.twig');
     }
 }
