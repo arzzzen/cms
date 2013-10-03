@@ -19,6 +19,8 @@ Requirements
 
 AppKernel.php
 
+```
+
 new Arzzzen\CmsBundle\ArzzzenCmsBundle(),
 new Sonata\BlockBundle\SonataBlockBundle(),
 new Sonata\jQueryBundle\SonatajQueryBundle(),
@@ -26,7 +28,11 @@ new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
 new Sonata\AdminBundle\SonataAdminBundle(),
 
+```
+
 roting.yml
+
+```
 
 admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
@@ -41,11 +47,14 @@ arzzzen_cms:
     resource: "@ArzzzenCmsBundle/Resources/config/routing.yml"
     prefix:   /
 
+```
 
 Settings
 --------------
 
 config.yml:
+
+```
 
 arzzzen_cms: 
     layout: "AcmeDemoBundle:layout:layout.html.twig"
@@ -54,6 +63,7 @@ sonata_admin:
     templates:
         layout:  ArzzzenCmsBundle:Default:sonata_admin_base_layout.html.twig
 
+```
 
 License
 -------
