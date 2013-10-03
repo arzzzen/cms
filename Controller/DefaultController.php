@@ -16,6 +16,8 @@ class DefaultController extends Controller
 
         $page = $em->getRepository('ArzzzenCmsBundle:Page')->findOneBy(array('route' => $route));
 
-        return array('page' => $page);
+        $layout = $this->container->getParameter('arzzzen.cms.layout');
+
+        return array('page' => $page, 'layout' => $layout);
     }
 }

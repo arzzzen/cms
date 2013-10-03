@@ -24,5 +24,16 @@ class ArzzzenCmsExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        if (!isset($config['layout'])) {
+            throw new \InvalidArgumentException(
+                'The "layout" option must be set'
+            );
+        }
+
+        $container->setParameter(
+            'arzzzen.cms.layout',
+            $config['layout']
+        );
     }
 }

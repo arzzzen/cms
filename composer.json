@@ -13,7 +13,8 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "sonata-project/admin-bundle": "2.2.*@dev"
+        "sonata-project/admin-bundle": "2.2.*@dev",
+        "sonata-project/doctrine-orm-admin-bundle": "dev-master"
     },
     "require-dev": {
         "symfony/framework-bundle": ">=2.1,<2.2-dev"
