@@ -145,7 +145,8 @@ class News
      */
     public function getCut()
     {
-        return substr($this->content, strrpos($this->content, '<!--cut-->')+1);
+        $pos = strpos($this->content, '<!--cut-->');
+        return $pos ? substr($this->content, $pos+1) : $this->content;
     }
 
     /**
