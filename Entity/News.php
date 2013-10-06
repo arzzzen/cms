@@ -139,6 +139,16 @@ class News
     }
 
     /**
+     * Get cut
+     *
+     * @return string 
+     */
+    public function getCut()
+    {
+        return substr($this->content, strrpos($this->content, '<!--cut-->')+1);
+    }
+
+    /**
      * Get created
      *
      * @return \DateTime 
