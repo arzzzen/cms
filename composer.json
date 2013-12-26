@@ -16,9 +16,6 @@
         "sonata-project/admin-bundle": "2.2.*@dev",
         "sonata-project/doctrine-orm-admin-bundle": "dev-master"
     },
-    "require-dev": {
-        "symfony/framework-bundle": ">=2.1,<2.2-dev"
-    },
     "autoload": {
         "psr-0": { "Arzzzen\\CmsBundle": "" }
     },
